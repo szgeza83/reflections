@@ -1,0 +1,25 @@
+head - current commit
+git init - initialize a Git repository
+git stauts - which files have changed since the last commit 
+
+---------------------------------------------------------
+
+Q: What happens when you initialize a repository? Why do you need to do it?
+
+A: We make it possible to track changes by Git. Othervise we don't have the necessary setup to track our changes.
+
+---------------------------------------------------------
+
+staging area --> intermediate area
+git add --> adds to the staging area
+
+
+---------------------------------------------------------
+
+Q: How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+A: Repository contains the previous commits. In the working directory we don't track changes.
+
+---------------------------------------------------------
+
+git commit --> commit changes in the staging area

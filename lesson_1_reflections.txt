@@ -1,0 +1,95 @@
+
+----------------------------------------------------
+compare files with fc in windows command prompt
+----------------------------------------------------
+
+Q: How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+A: By seeing the differences I could see what went wrong (what changed) during the process. This way it is easy to spot mistakes made be accident.
+
+Q: How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+A: The current version of the program may not work the way I expected. It may be useful to go back to the previous version and review the changes.
+
+----------------------------------------------------
+commits - user created checkpoints
+----------------------------------------------------
+
+Q: What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+
+A: By choosing when to commit I have the option to save/commit only the next working version or changes that should be treated together (like I am saving only after I finished the sentence). Auto save can save meaningless (not working) versions which can be had to interpret a couple of hours/days later.
+
+Q: Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+A: I think Google Docs is more like a backup creation system. It is not for code development where seperate files ma go hand in hand.
+
+----------------------------------------------------
+Exiting git log
+
+To stop viewing 'git log' output, press q (which stands for quit).
+(use the down arrow to drill down)
+
+Getting Colored Output
+
+To get colored diff output, run 'git config --global color.ui auto'
+----------------------------------------------------
+
+Q: How can you use the commands git log and git diff to view the history of files?
+
+A: With git log I can see the list of changes (in head words) made in the file. With git diff I can see the specific (line by line) changes between two versions of the file.
+
+----------------------------------------------------
+git repository - group of files managed together
+clone - takes (copies) an existing repository
+log - shows the commits in a repository
+“detach” the HEAD by switching to a previous commit  
+Octopus is a strategy Git uses to combine many different versions of code together.
+git checkout - restoring a previous version
+'diff -u' and 'git diff' show very similar outputs
+----------------------------------------------------
+
+Q: How might using version control make you more confident to make changes that could break something?
+
+A: Version control makes me more confident that I can start experimenting with various changes since I can always go back to the previous working version.
+
+
+Q: Now that you have your workspace set up, what do you want to try using Git for?
+
+A: For some code/program development where losts of experimenting will be done.
+
+----------------------------------------------------
+Compare two commits, printing each line that is present in one commit but not the other.
+git diff - will do this. It takes two arguments - the two commit ids to compare.
+(git diff considers the first argument as the "original", and the second argument as the "new" version)
+
+Make a copy of an entire Git repository, including the history, onto your own computer.
+git clone - will do this. It takes one argument - the url of the repository to copy. 
+
+Temporarily reset all files in a directory to their state at the time of a specific commit.
+git checkout - will do this. It takes one argument - the commit ID to restore. 
+
+Show the commits made in this repository, starting with the most recent.
+git log - will do this. It doesn't take any arguments.
+
+scp - copying a directory ("secure copy")
+
+Git doesn't allow you to save a new commit if no files have been updated.
+----------------------------------------------------
+
+Quiz
+
+last version:
+fa4c6bade4970c282b3870ad16f1bde8164663a9
+
+Bug free version:
+71d52709ddc4066e7a79a1d0a412e43429a0cdeb
+
+Bug introduced:
+547f4171a82ec6429d002c1acef357aec41d3f17
+
+speeding clones up
+003c8c197cd3b1e5b28b58f53ee14d7ebaa9bb3a
+
+version before speeding clones up
+746f762e38b5bbb7d0b837464ef6ec3f8ee5bf91
+
