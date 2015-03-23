@@ -23,3 +23,26 @@ A: Repository contains the previous commits. In the working directory we don't t
 ---------------------------------------------------------
 
 git commit --> commit changes in the staging area
+git diff (without arguments) --> shows changes in the working directory (that hasn't been added to the staging area)
+git diff --staged --> changes in the staging area (since the last commit)
+
+---------------------------------------------------------
+
+Q: How can you use the staging area to make sure you have one commit per logical change?
+
+A: Before I commit I can review the changes I made to the file(s).
+
+
+---------------------------------------------------------
+
+git branch easy-mode --> creates a new branch with easy-mode name
+
+
+---------------------------------------------------------
+
+
+Q: What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+A: When I make an experimantal change to a previous version of my file it may be useful to split my line of work into branches.
+
+---------------------------------------------------------
