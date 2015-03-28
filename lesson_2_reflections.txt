@@ -46,3 +46,54 @@ Q: What are some situations when branches would be helpful in keeping your histo
 A: When I make an experimantal change to a previous version of my file it may be useful to split my line of work into branches.
 
 ---------------------------------------------------------
+
+git log --graph -oneline --> shows the evolution of program versions
+
+git log --graph -oneline master coins--> shows the evolution of program versions (shows both branches)
+
+Creaating new branch:
+(a)
+git checkout -b new_branch_name
+(b)
+git branch new_branch_name
+git checkout new_branch_name
+
+---------------------------------------------------------
+
+Q: How do the diagrams help you visualize the branch structure?
+
+A: I can see/visualize the evolution/progress of the project.
+
+---------------------------------------------------------
+
+Merging files:
+If it appears in both files: we want it.
+If it appears only in one files: unknown.
+
+If we know the original file:
+Appears in the original, but only in one of the altered files --> remove it
+Doesn't apprear in the original, but appears in one of the altered files --> we want it.
+
+merge coins branch into the master branch
+
+git branch --> which branch am I currently using?
+
+git merge aaa bbb --> merge the two versions
+
+git branch -d coins --> deletes a branch (after merged or not needed)
+git show --> what changes were introduced by a commit
+
+---------------------------------------------------------
+
+Q: What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+A: New features on different branches can be merged together. It allows a team to work on different features simultaneously.
+
+
+Q: What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+A: It could be very tedious to try to manually find the differences between versions/branches.
+
+---------------------------------------------------------
+
+---------------------------------------------------------
